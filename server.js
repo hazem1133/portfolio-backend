@@ -1,12 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors");
 
-// Import all models
 const { Project, Skill, Profile } = require("./models");
 
 const app = express();
-app.use(cors());
 app.use(express.json());
 
 const seedDatabase = async () => {
